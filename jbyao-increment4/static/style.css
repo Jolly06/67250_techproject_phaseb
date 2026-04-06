@@ -1,0 +1,177 @@
+  * {
+  
+    margin: 5px;
+    background: #0b0b0c;
+    color:  #f5f5f7;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+
+  table{
+    margin: 5px;
+  }
+
+  .container {
+    display: grid; /* Turns this div into a CSS Grid layout */
+    
+    grid-template-areas:   /* Defines the layout structure */
+      'header nav_bar'
+      'main main-img'
+      'main-img2 main2'
+      'footer footer';
+      
+  }
+
+  .main-img, .main-img2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    padding: 20px;
+  }
+
+  .main, .main2 {
+
+    flex-direction: column;    
+    justify-content: center;   
+  }
+
+  .main p {
+    margin-bottom: 20px;       
+  }
+
+  /* Places each element into the correct area of the grid */
+  .header {
+    grid-area: header; 
+    justify-content: left;
+  }
+  .nav_bar {
+
+    grid-area: nav_bar;
+    display: flex; 
+    justify-content: right;   
+    align-self: center;
+
+    grid-area: nav_bar; 
+  }
+  .main {
+    grid-area: main; 
+    justify-content: left;
+  }
+  .main-img {
+    grid-area: main-img; 
+  }
+  .main2 {
+    grid-area: main2; 
+    margin-top:100px;
+  }
+  .main-img2 {
+    grid-area: main-img2; 
+    margin-top:100px;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+
+  #logo {
+    width: 300px; 
+    display:block;
+    min-width: 300px; 
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #f5f5f7;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+
+  nav a:hover {
+    border-color: #4d5c3b;
+    }
+
+  .active {
+    color:#92ad70;    
+  }
+
+  footer {
+    border-top: 1px solid rgba(195, 50, 5, 0.84);
+    padding: 18px 16px;
+    text-align: center;
+    color: rgba(245,245,247,.72);
+    }
+
+
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+
+  }
+  tr,td,th{
+    padding:5px;
+  }
+
+  tr:nth-child(even) td{
+    background-color: #7a77775a;
+  }
+
+  form * {
+    margin: auto;
+    text-align: center;
+  }
+
+  #cta {
+    padding: 10px 14px;
+    margin: 20px 10px;
+    display: inline-block;
+    background: #7088ad;
+    color: #0b0b0c;
+    border-color: #4d5c3b;
+    border-radius: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .buy-btn {
+    background: #7088ad;
+    color: #0b0b0c;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-weight: 400;
+  }
+
+  .buy-btn:hover {
+    background: #92ad70;
+    color: #0b0b0c;
+  }
+
+  #longIntro{
+    display:none;
+  }
+  #readLess{
+    display:none;
+  }
+
+  #readMore, #readLess {
+      border: 2px solid #b7acac;
+      padding: 5px 15px;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      color:#8a8787;
+  }
+
+  #readMore:hover, #readLess:hover {
+      background-color: #6d6c6c;
+      color: white;
+  }
