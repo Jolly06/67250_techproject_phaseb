@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="./static/style.css">
+    <meta name="author" content="Johnny Yao">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="./static/script.js" defer></script>
+
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header  class="header">
+            <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+        </header>
+        <nav class="nav_bar">
+            <a href = "index.html">Home</a>
+            <a href = "views/explore.html">Explore</a>
+            <a href = "views/exhibitions.html">Exhibitions</a>
+            <a href = "views/membership.html">Membership</a>
+            <a href = "views/buytickets.html">Tickets</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+
+        </nav>
+    
+        <main class = "main"> 
+
+    
+            <h2 id="greeting">Welcome to Monomuse</h2>
+            
+            <p>MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology, and human creativity. Through immersive exhibitions, interactive installations, and rotating collections, MonoMuse invites visitors to discover how digital innovation is transforming the way we create, experience, and understand art. Whether you are a first-time visitor or a returning member, our exhibitions offer new perspectives on the role of technology in culture and everyday life. Plan your visit to experience cutting-edge exhibitions, hands-on experiences, and events designed to inspire curiosity and creativity.
+    </p>
+            <button id="cta" onclick="window.location.href='views/buytickets.html'">Buy Ticket</button>
+
+            <br><br>
+
+            <div >
+                <p id="shortIntro">MonoMuse serves as a global lighthouse for intellectual achievement, featuring exhibits developed in direct collaboration with 16 Nobel Prize laureates. When you walk through our doors, you are interacting with the groundbreaking discoveries that fuel the future of the world.</p>
+                <span id="readMore">Read More</span>
+                <p id="longIntro">We put a ton of effort (and a massive amount of money) into making this place look incredible. From the way the metal exterior lights up to the eco-friendly tech hidden in the walls, every inch of the museum was designed to awe. We’ve even picked up a bunch of international design awards and "Best Museum" trophies along the way. Come pay us a visit!</p>
+                <span id="readLess">Read Less</span>
+            </div> 
+
+
+
+    </main>
+        <figure class="main-img">
+            <div class="slideshow">
+                <button class="slide-arrow">&#8592;</button>
+                <img id="slide-img" src="./static/elephant.jpg" alt="elephant image">
+                <button class="slide-arrow">&#8594;</button>
+            </div>
+            <p id="slide-caption"></p>
+        </figure>
+        <footer class="footer"> <p id="copy""></p> 
+        
+        </footer>
+    </div>
+</body>
+</html>
